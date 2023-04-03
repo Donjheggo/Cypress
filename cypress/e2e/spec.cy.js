@@ -18,7 +18,7 @@ describe("Create Account Script", () => {
 
     // Username form
     cy.get(":nth-child(2) > .recommended-input", customTimeOut).type(
-      "testuser123456"
+      "testuser999"
     );
 
     // Password form
@@ -86,7 +86,7 @@ describe("Create Account Script", () => {
       .click();
 
     // Click the user in the table
-    cy.contains("td", "testuser123456").parent("tr").click();
+    cy.contains("td", "testuser999").parent("tr").click();
 
     // Wait for 5 minutes
     cy.wait(300000);
@@ -102,3 +102,4 @@ describe("Create Account Script", () => {
     
   });
 });
+
